@@ -9,7 +9,7 @@ var ages = [3, 9, 23, 64, 2, 8, 28, 93];
 var lastIndex = ages.length - 1;
 var firstElement = ages[0];
 var lastElement = ages[lastIndex];
-var newAge = 55;
+var newAge = 90;
 
 var subtractResult = lastElement - firstElement;
 console.log("Subtract Result", subtractResult);
