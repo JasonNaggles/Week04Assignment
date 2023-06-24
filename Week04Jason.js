@@ -68,7 +68,13 @@ console.log("Concatenated Names", concatenatedNames);
    }
    console.log(nameLengths);
 6. //Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array.
+   var nameLengths = [3, 5, 3, 5, 4, 3];
+   var sum = 0;
 
+   for (var i = 0; i < nameLengths.length; i++) {
+    sum += nameLengths[i];
+   }
+   console.log("Sum:", sum);
 7. //Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
 
 8. //Write a function that takes two parameters, firstName and lastName, and returns a full name. The full name should be the first and the last name separated by a space.
