@@ -28,11 +28,30 @@ console.log("Average age", average);
 2. //Create an array called names that contains the following values: 'Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'.
    //Use a loop to iterate through the array and calculate the average number of letters per name.
    //Use a loop to iterate through the array again and concatenate all the names together, separated by spaces.
+var names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
+
+var totalLetters = 0;
+for (var i = 0; i < names.length; i++) {
+    totalLetters += names[i].length;
+}
+
+var averageLetters = totalLetters / names.length;
+console.log("Average number of letters per name", averageLetters);
+
+var concatenatedNames = ' ';
+for (var i = 0; i < names.length; i++) {
+    concatenatedNames += names[i];
+    if (i !== names.length -1) {
+        concatenatedNames += ' ';
+    }
+}
+
+console.log("Concatenated Names", concatenatedNames);
 
 3. //How do you access the last element of any array?
-
+    var lastElement = array[array.length -1];
 4. //How do you access the first element of any array?
-
+    var firstElement = array[0];
 5. //Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
    //For example:
 
