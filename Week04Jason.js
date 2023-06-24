@@ -90,7 +90,14 @@ console.log("Concatenated Names", concatenatedNames);
    console.log(result);
 
 8. //Write a function that takes two parameters, firstName and lastName, and returns a full name. The full name should be the first and the last name separated by a space.
+   function getFullName(firstName, lastName) {
+    var fullName = firstName + " " + lastName;
+    return fullName;
+   }
 
+   var result = getFullName("Jason", "Naggles");
+   console.log(result);
+   
 9. //Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
 10. //Write a function that takes an array of numbers and returns the average of all the elements in the array.
