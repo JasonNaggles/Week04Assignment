@@ -49,15 +49,24 @@ for (var i = 0; i < names.length; i++) {
 console.log("Concatenated Names", concatenatedNames);
 
 3. //How do you access the last element of any array?
-    var lastElement = array[array.length -1];
+    //var lastElement = array[array.length - 1];
+    //console.log(array(lastElement));
 4. //How do you access the first element of any array?
-    var firstElement = array[0];
+    //var firstElement = array[0];
+    //console.log(array(firstElement));
 5. //Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
    //For example:
 
    //let names = ["Kelly", "Sam", "Kate"];    // starting with this array
    //let nameLengths = [5, 3, 4];             // create a new array
+   var names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
+   var nameLengths = [];
 
+   for (var i = 0; i < names.length; i++) {
+    var length = names[i].length;
+    nameLengths.push(length);
+   }
+   console.log(nameLengths);
 6. //Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array.
 
 7. //Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
