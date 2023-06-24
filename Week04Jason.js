@@ -97,9 +97,22 @@ console.log("Concatenated Names", concatenatedNames);
 
    var result = getFullName("Jason", "Naggles");
    console.log(result);
-   
-9. //Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
+9. //Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+   function isSumGreaterThan100(numbers) {
+    for (var i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum > 100;
+   }
+
+   var numbers1 = [60, 30, 10, 50];
+   var result1 = isSumGreaterThan100(numbers1);
+   console.log(result1);
+
+   var numbers2 = [10, 20, 30, 40];
+   var result2 = isSumGreaterThan100(numbers2);
+   console.log(result2);
 10. //Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
 11. //Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
