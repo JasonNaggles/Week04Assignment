@@ -78,6 +78,7 @@ console.log("Concatenated Names", concatenatedNames);
     sum += nameLengths[i];
    }
    console.log("Sum:", sum);
+   
 7. //Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
    
    function concatenateWord(word, n) {
@@ -119,8 +120,10 @@ console.log("Concatenated Names", concatenatedNames);
    var numbers2 = [10, 20, 30, 40];
    var result2 = isSumGreaterThan100(numbers2);
    console.log(result2);
-10. //Write a function that takes an array of numbers and returns the average of all the elements in the array.
-   function getAverageOfNumbers(numbers) {
+
+   10. //Write a function that takes an array of numbers and returns the average of all the elements in the array.
+   
+    function getAverageOfNumbers(numbers) {
     var sum = 0;
 
     for (var i = 0; i < numbers.length; i++) {
