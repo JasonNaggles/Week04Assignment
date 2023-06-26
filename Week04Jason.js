@@ -104,6 +104,7 @@ console.log("Concatenated Names", concatenatedNames);
 9. //Wrote a function to determine if sum of array > 100
    
     function isSumGreaterThan100(numbers) {
+        sum = 0;
     for (var i = 0; i < numbers.length; i++) {
         sum += numbers[i];
     }
@@ -113,8 +114,9 @@ console.log("Concatenated Names", concatenatedNames);
         return false;
     }
    }
+   console.log(isSumGreaterThan100(ages));
 
-   10. //Write a function that takes an array of numbers and returns the average of all the elements in the array.
+   10. //Wrote a function to average an array of numbers.
    
     function getAverageOfNumbers(numbers) {
     var sum = 0;
@@ -130,7 +132,7 @@ console.log("Concatenated Names", concatenatedNames);
     var result = getAverageOfNumbers(numbers);
     console.log(result);
 
-11. //Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+11. //Wrote a function compare two averages of 2 arrays of numbers.
     
     function isFirstArrayAverageGreater(array1, array2) {
         var sum1 = 0;
@@ -154,7 +156,7 @@ console.log("Concatenated Names", concatenatedNames);
         var result = isFirstArrayAverageGreater(array1, array2);
         console.log(result);
 
-12. //Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+12. //Wrote a function of a boolean and a conditional.
 
     function willBuyDrink(isHotOutside, moneyInPocket) {
     return isHotOutside && moneyInPocket > 10.50;
