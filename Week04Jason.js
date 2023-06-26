@@ -167,4 +167,14 @@ console.log("Concatenated Names", concatenatedNames);
     var result2 = willBuyDrink(false, 8.50);
     console.log(result2);
     
-13. //Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+13. //Wrote a function of conditionals return strings (I was starving).
+
+function grubHub(tastyFood, distance) {
+
+  if ((tastyFood === "pasta" || tastyFood === "pizza" || tastyFood === "taco") && (distance < 3)) {
+        return "Order GrubHub";
+    } else {
+        return "Just cook instead";
+    }
+}
+    console.log(grubHub("pasta", 2));
