@@ -44,11 +44,14 @@ for (var i = 0; i < names.length; i++) {
 console.log("Concatenated Names", concatenatedNames);
 
 3. //How do you access the last element of any array?
+
     //var lastElement = array[array.length - 1];
-    //console.log(array(lastElement));
+    
+
 4. //How do you access the first element of any array?
     //var firstElement = array[0];
-    //console.log(array(firstElement));
+    
+
 5. //Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
    //For example:
 
@@ -57,25 +60,24 @@ console.log("Concatenated Names", concatenatedNames);
    
    var names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
    var nameLengths = [];
-
+   //5a. Looped thru the names array & pushed the new array called nameLengths.
    for (var i = 0; i < names.length; i++) {
     var length = names[i].length;
     nameLengths.push(length);
    }
    console.log(nameLengths);
 
-6. //Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array.
+6. 
    
    var nameLengths = [3, 5, 3, 5, 4, 3];
    var sum = 0;
-
+   //6a.  Looped thru the nameLengths array & calculated sum
    for (var i = 0; i < nameLengths.length; i++) {
     sum += nameLengths[i];
    }
    console.log("Sum:", sum);
 
-7. //Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
-   
+7. //Wrote a function called concatenatedWord to concatenate a word n times.
    function concatenateWord(word, n) {
    var concatenated = '';
 
@@ -89,7 +91,7 @@ console.log("Concatenated Names", concatenatedNames);
    var result = concatenateWord("Hello", 3);
    console.log(result);
 
-8. //Write a function that takes two parameters, firstName and lastName, and returns a full name. The full name should be the first and the last name separated by a space.
+8. //Wrote a function to put together a full name.
    
     function getFullName(firstName, lastName) {
     var fullName = firstName + " " + lastName;
@@ -99,22 +101,20 @@ console.log("Concatenated Names", concatenatedNames);
    var result = getFullName("Jason", "Naggles");
    console.log(result);
 
-9. //Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+9. //Wrote a function to determine if sum of array > 100
    
     function isSumGreaterThan100(numbers) {
     for (var i = 0; i < numbers.length; i++) {
         sum += numbers[i];
     }
-    return sum > 100;
+    if (sum > 100) {
+        return true;
+    } else {
+        return false;
+    }
    }
 
-   var numbers1 = [60, 30, 10, 50];
-   var result1 = isSumGreaterThan100(numbers1);
-   console.log(result1);
-
-   var numbers2 = [10, 20, 30, 40];
-   var result2 = isSumGreaterThan100(numbers2);
-   console.log(result2);
+   
 
    10. //Write a function that takes an array of numbers and returns the average of all the elements in the array.
    
