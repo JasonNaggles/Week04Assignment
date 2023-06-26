@@ -1,21 +1,16 @@
-1. //Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
-   //Programmatically subtract the value of the first element in the array from the value in the last element of the array.
-   //Do not use numbers to reference the last element, find it programmatically.
-   //ages[7] - ages[0] is not allowed!
-   //Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).
-   //Use a loop to iterate through the array and calculate the average age.
-
+1. 
+//1a.  Created a total of 8 variables.  They are ages, lastIndex, firstElement, lastElement, newAge, subtractResult, sum, and average.
 var ages = [3, 9, 23, 64, 2, 8, 28, 93];
 var lastIndex = ages.length - 1;
 var firstElement = ages[0];
 var lastElement = ages[lastIndex];
 var newAge = 90;
-
+//1b. Named a variable called subtractResult to subtract the first element called firstElement from the last element called lastElement.
 var subtractResult = lastElement - firstElement;
 console.log("Subtract Result", subtractResult);
-
+//1c.  Pushed a new age called newAge.
 ages.push(newAge);
-
+//1d.  Looped thru the array called ages & calculated the average age. 
 var sum = 0;
 for (i = 0; i < ages.length; i++) {
     sum += ages[i];
@@ -25,12 +20,11 @@ for (i = 0; i < ages.length; i++) {
 var average = sum / ages.length;
 console.log("Average age", average);
 
-2. //Create an array called names that contains the following values: 'Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'.
-   //Use a loop to iterate through the array and calculate the average number of letters per name.
-   //Use a loop to iterate through the array again and concatenate all the names together, separated by spaces.
+2. 
    
 var names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 var totalLetters = 0;
+//2a. Looped thru the array called names & calculated the average number of letters in each name. 
 for (var i = 0; i < names.length; i++) {
     totalLetters += names[i].length;
 }
@@ -39,6 +33,7 @@ var averageLetters = totalLetters / names.length;
 console.log("Average number of letters per name", averageLetters);
 
 var concatenatedNames = ' ';
+//2b. Looped thru the array in order to concatenate all names with spaces.
 for (var i = 0; i < names.length; i++) {
     concatenatedNames += names[i];
     if (i !== names.length -1) {
@@ -78,7 +73,7 @@ console.log("Concatenated Names", concatenatedNames);
     sum += nameLengths[i];
    }
    console.log("Sum:", sum);
-   
+
 7. //Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
    
    function concatenateWord(word, n) {
